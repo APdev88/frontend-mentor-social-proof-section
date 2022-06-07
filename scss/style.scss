@@ -5,10 +5,10 @@ body {
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
   max-width: 1440px;
-  margin-top: 60px;
   background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
   background-position: top left, center bottom;
   background-repeat: no-repeat, no-repeat;
+  margin: 60px auto;
 }
 
 .section__container {
