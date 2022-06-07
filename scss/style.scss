@@ -1,0 +1,143 @@
+@import "config";
+@import "utilities";
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  max-width: 1440px;
+  margin-top: 60px;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, center bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+
+  .section__1 {
+    color: $primary-color;
+    width: 410px;
+
+    h1 {
+      font-size: 55px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    p {
+      color: $primary-color;
+      margin-top: 20px;
+      font-size: 17px;
+    }
+  }
+
+  .section__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+
+    &__box {
+      background-color: $light-magenta;
+      margin: 9px;
+      border-radius: 10px;
+      padding: 18px 70px 18px 30px;
+
+      &:nth-child(1) {
+        align-self: start;
+      }
+
+      &:nth-child(2) {
+        align-self: center;
+      }
+
+      &:nth-child(3) {
+        align-self: end;
+      }
+    }
+
+    img {
+      width: 15px;
+      margin-right: 3px;
+    }
+
+    span {
+      margin-left: 20px;
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}
+
+// Section 3
+.section__3 {
+  max-width: 1200px;
+  margin: 70px auto;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__box {
+    background-color: $primary-color;
+    padding: 40px;
+    border-radius: 10px;
+    width: 370px;
+    height: 235px;
+    // margin: 15px;
+
+    & div {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 18px;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      display: inline-block;
+
+      h3 {
+        color: $white;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      p {
+        color: $secondary-color;
+        font-size: 13px;
+      }
+
+      & div {
+        display: flex;
+      }
+    }
+
+    &:nth-child(1) {
+      align-self: flex-start;
+    }
+
+    &:nth-child(2) {
+      align-self: center;
+    }
+
+    &:nth-child(3) {
+      align-self: flex-end;
+    }
+    &__text {
+      color: $white;
+      margin-top: 20px;
+    }
+  }
+}
+
+@import "mobile";
